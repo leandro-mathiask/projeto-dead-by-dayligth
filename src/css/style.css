@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "GOT";
+    src: url(../fontes/GOT.ttf);
+}
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.carrossel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.carrossel .imagem {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+}
+
+.carrossel .imagem.ativa {
+    display: block;
+    animation: mudarImagem 0.7s;
+}
+
+@keyframes mudarImagem {
+    from {
+        opacity: 0.85;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main:after {
+    content: "";
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+    z-index: -1;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    margin: 0 6rem;
+}
+
+.conteudo .informacoes {
+    display: none;
+}
+
+.conteudo .informacoes.ativa {
+    display: block;
+}
+
+.conteudo .informacoes h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 8rem;
+    font-family: "GOT";
+    word-spacing: 15px;
+}
+
+.conteudo .informacoes .descricao {
+    width: 60%;
+    font-size: 2.4rem;
+    color: #fff;
+    line-height: 4rem;
+    height: 30rem;
+    overflow: auto;
+    padding-right: 1.5rem;
+}
+
+.conteudo .carrossel-pequeno img {
+    max-width: 100%;
+    border: 2px solid white;
+    display: none;
+}
+
+.conteudo .botoes-carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.conteudo .botoes-carrossel .botao {
+    background-color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.conteudo .botoes-carrossel .botao.selecionado {
+    background-color: #1d8346;
+    border-color: #fff;
+}

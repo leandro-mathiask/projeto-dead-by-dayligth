@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto | Dead by Daylight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <main>
+        <div class="carrossel">
+            <img src="./src/imagens/claudette-morel.jpg" alt="Claudete Morel" class="imagem ativa">
+            <img src="./src/imagens/jake-park.jpeg" alt="Jake Park" class="imagem">
+            <img src="./src/imagens/feng-min.jpeg" alt="Feng Min" class="imagem">
+            <img src="./src/imagens/jeff-johansen.jpg" alt="Jeff Johansen" class="imagem">
+            <img src="./src/imagens/mikaela-reid.png" alt="Mikaela Reid" class="imagem">
+            <img src="./src/imagens/bill-overbeck.jpg" alt="Bill Overbeck" class="imagem">
+            <img src="./src/imagens/yui-kimura.jpg" alt="Yui Kimura" class="imagem">
+        </div>
+        <div class="conteudo">
+            <div class="informacoes ativa">
+                <h1>Claudete Morel</h1>
+                <p class="descricao">
+                    Claudette compreende o valor do altruísmo, utilizando sua aptidão para a botânica para garantir que
+                    seus colegas de equipe estejam preparados para os desafios que se apresentam. Uma especialista em
+                    cura, tanto para si mesma quanto para os outros, a presença solidária de Claudette é sempre
+                    bem-vinda.
+                </p>
+            </div>
+            <div class="informacoes">
+                <h1>Jake Park</h1>
+                <p class="descricao">
+                    Jake Park é um sobrevivente solitário, capaz de se manter na maioria das situações. Suas Habilidades Pessoais o permitem a se movimentar mais efetivamente ao redor do ambiente e
+                    sobreviver quando machucado. Eles são todos sobre se manter calmo quando você enfrenta a terror verdadeiro.
+                </p>
+            </div>
+            <div class="informacoes">
+                <h1>Feng Min</h1>
+                <p class="descricao">
+                    Feng Min é uma competidora focada, capaz de se concentrar em objetivos e rapidamente mudar de foco. Ela pode trabalhar silenciosamente em Geradores e, assim, pode perceber o Assassino muito antes que eles a notem. Ela terá ido embora antes que o Assassino possa fazer qualquer coisa.
+                </p>
+            </div>
+            <div class="informacoes">
+                <h1>Jeff Johansen</h1>
+                <p class="descricao">
+                    Jeff Johansen é um artista quieto com um coração de ouro, permanecendo firme contra as probabilidades impossíveis. Ele tem um passado sombrio, mas teve uma vida tranquila e simples até seu pai falecer, deixando as coisas para resolver.
+                </p>
+            </div>
+            <div class="informacoes">
+                <h1>Mikaela Reid</h1>
+                <p class="descricao">
+                    Mikaela Reid é uma jovem mística, capaz de alterar os trials com habilidades sobrenaturais.
+                </p>
+            </div>
+            <div class="informacoes">
+                <h1>Bill Overbeck</h1>
+                <p class="descricao">
+                    Bill Overbeck é um velho Soldado, acostumado a lidar com situações críticas. Ele é duro como pedra e sabe como sobreviver a qualquer coisa. Ele fará o que for preciso para ajudar os outros a viverem para ver outro dia e não terá medo de levar um para o time.
+                </p>
+            </div>
+            <div class="informacoes">
+                <h1>Yui Kimura</h1>
+                <p class="descricao">
+                    Yui Kimura é uma corredora de rua experiente, capaz de obter vantagens para si e para seus companheiros Sobreviventes em situações desafiadoras.
+                </p>
+            </div>
+            <div class="carrossel-pequeno">
+                <img src="./src/imagens/claudette-morel.jpg" alt="Claudete Morel" class="personagens principal" id="personagem1">
+                <img src="./src/imagens/jake-park.jpeg" alt="Jake Park" class="personagens" id="personagem2">
+                <img src="./src/imagens/feng-min.jpeg" alt="Feng Min" class="personagens" id="personagem3">
+                <img src="./src/imagens/jeff-johansen.jpg" alt="Jeff Johansen" class="personagens" id="personagem4">
+                <img src="./src/imagens/mikaela-reid.png" alt="Mikaela Reid" class="personagens" id="personagem5">
+                <img src="./src/imagens/bill-overbeck.jpg" alt="Bill Overbeck" class="personagens" id="personagem6">
+                <img src="./src/imagens/yui-kimura.jpg" alt="Yui Kimura" class="personagens" id="personagem7">
+            </div>
+            <div class="botoes-carrossel">
+                <button class="botao selecionado" data-target="personagem1"></button>
+                <button class="botao" data-target="personagem2"></button>
+                <button class="botao" data-target="personagem3"></button>
+                <button class="botao" data-target="personagem4"></button>
+                <button class="botao" data-target="personagem5"></button>
+                <button class="botao" data-target="personagem6"></button>
+                <button class="botao" data-target="personagem7"></button>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
